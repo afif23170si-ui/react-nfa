@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&display=swap');
+
+/* Variabel warna */
+:root {
+  --primary-color: #0056b3;
+  --secondary-color: #6c757d;
+  --light-bg-color: #f8f9fa;
+  --dark-text-color: #212529;
+  --white-color: #ffffff;
+}
+
+/* Font global */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark-text-color);
+  margin: 0;
+  background-color: var(--light-bg-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/* Navbar hover effect */
+.nav-link {
+  position: relative;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Card hover effect */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Gradient text */
+.text-gradient, .album h2 {
+  background: linear-gradient(90deg, #0056b3, #00c6ff);
+  background-clip: text;            /* Standar */
+  -webkit-background-clip: text;    /* Prefix untuk Safari/Chrome lama */
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #00274d, #0056b3);
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
