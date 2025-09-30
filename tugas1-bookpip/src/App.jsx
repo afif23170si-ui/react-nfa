@@ -1,12 +1,8 @@
-// src/App.jsx
-
-// Pastikan Anda mengimpor file CSS global
-// import './App.css';
-
 import Home from './components/Home';
 import Products from './components/Products';
 import Team from './components/Team';
 import Contact from './components/Contact';
+// import './App.css'
 
 function App() {
   return (
